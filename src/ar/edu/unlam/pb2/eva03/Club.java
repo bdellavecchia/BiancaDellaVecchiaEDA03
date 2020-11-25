@@ -21,7 +21,7 @@ public class Club {
 		competencias = new HashMap();
 	}
 
-
+	
 	public void agregarDeportista(Deportista deportista) {
 		// TODO Auto-generated method stub
 		socios.add(deportista);
@@ -34,18 +34,16 @@ public class Club {
 	}
 
 
-	public void crearEvento(Evento evento, String nombreEvento) {
+	public void crearEvento(TipoDeEvento tipo, String nombre) {
 		// TODO Auto-generated method stub
-		competencias.put(nombreEvento, new Evento(evento));
+		competencias.put(nombre, new Evento(tipo));
 	}
 	
 	
-	public Boolean inscribirEnEvento(String string, Deportista deportista) throws NoEstaPreparado {
+	public Integer inscribirEnEvento(String string, Deportista deportista) throws NoEstaPreparado {
 		return null;
 		// TODO Auto-generated method stub
 	
 	}
-
-
 
 }

@@ -20,8 +20,10 @@ public class Evento {
 		this.participantes = participantes;
 	}
 
-	public Evento(Evento evento) {
+	public Evento(TipoDeEvento tipo) {
 		// TODO Auto-generated constructor stub
+		super();
+		this.tipo=tipo;
 	}
 	
 
@@ -53,5 +55,6 @@ public class Evento {
 	public void setParticipantes(Map<Integer, Deportista> participantes) {
 		this.participantes = participantes;
 	}
+
 	
 }
